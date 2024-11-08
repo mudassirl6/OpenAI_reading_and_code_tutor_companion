@@ -9,7 +9,8 @@ load_dotenv()
 # Load environment variables from .env file
 
 # Access the OpenAI API key from environment variables
-openai.api_key = os.getenv("openai_key")
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
 
 
 # Function to get a summary of the passage (Reading Companion)
