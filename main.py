@@ -28,7 +28,7 @@ def get_summary(text, max_tokens=50):
 
 # Function to provide context or background on the passage (Reading Companion)
 def get_context(text, max_tokens=100):
-    response = openai.chat_completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",  # Using gpt-3.5-turbo
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
@@ -41,7 +41,7 @@ def get_context(text, max_tokens=100):
 
 # Function to explain difficult passages in simple terms (Reading Companion)
 def explain_passage(text, max_tokens=100):
-    response = openai.chat_completions.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",  # Using gpt-3.5-turbo
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
