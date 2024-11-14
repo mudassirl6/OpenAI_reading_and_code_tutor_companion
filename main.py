@@ -100,6 +100,7 @@ def main():
 
     if option == "Reading Companion":
         # Text input for user to paste a passage
+        st.title("Virtual Tutor Personalized Reading Companion 📚")
         text = st.text_area("Enter the passage you'd like help with:")
 
         # Display the number of tokens in the text
@@ -139,6 +140,7 @@ def main():
                 st.warning("Please enter some text to get an explanation.")
 
     elif option == "Virtual Coding Tutor":
+        st.title("Virtual Tutor for Coding Practice 💻")
         # Code input for the coding tutor
         code = st.text_area("Enter your code or coding challenge:")
 
