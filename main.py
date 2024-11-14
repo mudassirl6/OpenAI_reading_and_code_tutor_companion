@@ -93,7 +93,6 @@ def track_progress(user_input, output, file_path="progress.json"):
 
 # Streamlit UI
 def main():
-    st.title("Virtual Tutor Using GPT-3.5 TURBO Model")
     
     st.sidebar.title("Navigation")
     option = st.sidebar.radio("Choose a mode:", ["Reading Companion", "Virtual Coding Tutor"])
